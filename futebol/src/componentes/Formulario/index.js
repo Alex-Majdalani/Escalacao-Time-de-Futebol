@@ -16,18 +16,20 @@ const Formulario = () => {
     "Ponta Esquerda",
     "Atacante",
     "Centroavante",
+    "Reserva",
   ];
 
   return (
     <section className="formulario">
       <form>
+        <h2>Preencha os dados para criar o card do jogador</h2>
         <CampoTexto
           label="Nome do Time"
           placeholder="Digite o nome do seu time"
         />
         <CampoTexto label="Nome" placeholder="Digite seu nome" />
         <CampoTexto label="Imagem" placeholder="Envie o endereço da imagem" />
-        <Lista label="Posições" itens={posicoes} />
+        <Lista label="Posição" itens={posicoes} />
       </form>
     </section>
   );

@@ -24,10 +24,15 @@ const Formulario = () => {
       <form>
         <h2>Preencha os dados para criar o card do jogador</h2>
         <CampoTexto
+          obrigatorio={true}
           label="Nome do Time"
           placeholder="Digite o nome do seu time"
         />
-        <CampoTexto label="Nome" placeholder="Digite seu nome" />
+        <CampoTexto
+          obrigatorio={true}
+          label="Nome"
+          placeholder="Digite seu nome"
+        />
         <CampoTexto label="Imagem" placeholder="Envie o endereço da imagem" />
         <Lista label="Posição" itens={posicoes} />
       </form>

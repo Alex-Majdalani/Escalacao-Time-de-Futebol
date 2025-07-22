@@ -20,9 +20,14 @@ const Formulario = () => {
     "Reserva",
   ];
 
+  /*Função para a pagina não recarregar quando submeter o formulario*/
+  const aoSalvar = (evento) => {
+    evento.preventDefault();
+  };
+
   return (
     <section className="formulario">
-      <form>
+      <form onSubmit={aoSalvar}>
         <h2>Preencha os dados para criar o card do jogador</h2>
         <CampoTexto
           obrigatorio={true}

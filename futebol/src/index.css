@@ -5,10 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom, rgb(60, 107, 60), rgb(0, 0, 0));
 }
 
 body h1 {
   text-align: center;
+  color: #fff;
+  text-shadow: 5px 5px 10px black;
 }
 
 code {

@@ -1,4 +1,6 @@
 .banner {
-  background: linear-gradient(to left, rgb(60, 107, 60), rgb(0, 0, 0));
+  background: linear-gradient(to bottom, rgb(5, 5, 5), rgb(0, 0, 0));
   text-align: center;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgb(20, 39, 27);
 }

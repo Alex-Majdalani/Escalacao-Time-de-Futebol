@@ -1,3 +1,4 @@
+import Botao from "../Botao";
 import CampoTexto from "../CampoTexto";
 import Lista from "../Lista";
 import "./Formulario.css";
@@ -35,6 +36,7 @@ const Formulario = () => {
         />
         <CampoTexto label="Imagem" placeholder="Envie o endereço da imagem" />
         <Lista label="Posição" itens={posicoes} />
+        <Botao>Criar Card</Botao>
       </form>
     </section>
   );

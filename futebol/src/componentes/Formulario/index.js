@@ -4,7 +4,7 @@ import CampoTexto from "../CampoTexto";
 import Lista from "../Lista";
 import "./Formulario.css";
 
-const Formulario = () => {
+const Formulario = (props) => {
   const posicoes = [
     "Goleiro",
     "Lateral Direito",
@@ -24,7 +24,12 @@ const Formulario = () => {
   /*Função para a pagina não recarregar quando submeter o formulario*/
   const aoSalvar = (evento) => {
     evento.preventDefault();
-    console.log("Formulário ok =>", nomeTime, nome, imagem, position);
+    props.aoJogadorCadastrado({
+      nomeTime,
+      nome,
+      imagem,
+      position,
+    });
   };
 
   const [nomeTime, setNomeTime] = useState("");

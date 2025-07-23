@@ -8,6 +8,7 @@ function App() {
 
   const aoNovoJogadorAdicionado = (jogador) => {
     console.log(jogador);
+    setJogadores([...jogadores, jogador]);
   };
 
   return (

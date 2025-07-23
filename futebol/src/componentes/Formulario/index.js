@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Botao from "../Botao";
 import CampoTexto from "../CampoTexto";
 import Lista from "../Lista";
@@ -23,7 +24,13 @@ const Formulario = () => {
   /*Função para a pagina não recarregar quando submeter o formulario*/
   const aoSalvar = (evento) => {
     evento.preventDefault();
+    console.log("Formulário ok =>", nomeTime, nome, imagem, position);
   };
+
+  const [nomeTime, setNomeTime] = useState("");
+  const [nome, setNome] = useState("");
+  const [imagem, setImagem] = useState("");
+  const [position, setPosition] = useState("");
 
   return (
     <section className="formulario">
@@ -33,14 +40,29 @@ const Formulario = () => {
           obrigatorio={true}
           label="Nome do Time"
           placeholder="Digite o nome do seu time"
+          valor={nomeTime}
+          aoAlterado={(valor) => setNomeTime(valor)}
         />
         <CampoTexto
           obrigatorio={true}
           label="Nome"
           placeholder="Digite seu nome"
+          valor={nome}
+          aoAlterado={(valor) => setNome(valor)}
         />
-        <CampoTexto label="Imagem" placeholder="Envie o endereço da imagem" />
-        <Lista label="Posição" itens={posicoes} />
+        <CampoTexto
+          label="Imagem"
+          placeholder="Envie o endereço da imagem"
+          valor={imagem}
+          aoAlterado={(valor) => setImagem(valor)}
+        />
+        <Lista
+          obrigatorio={true}
+          label="Position"
+          itens={posicoes}
+          valor={position}
+          aoAlterado={(valor) => setPosition(valor)}
+        />
         <Botao>Criar Card</Botao>
       </form>
     </section>

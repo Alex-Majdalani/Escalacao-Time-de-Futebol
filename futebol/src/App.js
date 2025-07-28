@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulario";
+import Posicoes from "./componentes/Posicoes";
 
 function App() {
   /*Criar um estado para os jogadores */
@@ -18,6 +19,9 @@ function App() {
       <Formulario
         aoJogadorCadastrado={(jogador) => aoNovoJogadorAdicionado(jogador)}
       />
+      <Posicoes nome="Goleiro" />
+      <Posicoes nome="Lateiral Direito" />
+      <Posicoes nome="Zagueiro" />
     </div>
   );
 }

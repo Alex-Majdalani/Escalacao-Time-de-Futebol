@@ -18,52 +18,32 @@ function App() {
     {
       nome: "Lateral Direito",
       corPrimaria: "#6BB9F0",
-      corSecundaria: "#E3F4FF",
+      corSecundaria: "#d7efffff",
     },
     {
       nome: "Lateral Esquerdo",
       corPrimaria: "#2980B9",
-      corSecundaria: "#D6ECFF",
+      corSecundaria: "#bedaf3ff",
     },
     {
-      nome: "Volante",
-      corPrimaria: "#FFF176",
-      corSecundaria: "#FFFDE7",
-    },
-    {
-      nome: "Centroavante",
-      corPrimaria: "#FBC02D",
-      corSecundaria: "#FFF9E1",
-    },
-    {
-      nome: "Meia",
-      corPrimaria: "#FFD54F",
-      corSecundaria: "#FFF7DA",
-    },
-    {
-      nome: "Meia Ofensivo",
-      corPrimaria: "#FFCA28",
-      corSecundaria: "#FFF3CD",
-    },
-    {
-      nome: "Meia Defensivo",
+      nome: "Meio Campo",
       corPrimaria: "#FFB300",
       corSecundaria: "#FFF0C2",
     },
     {
       nome: "Ponta Direita",
       corPrimaria: "#FFB74D",
-      corSecundaria: "#FFF3E0",
+      corSecundaria: "#ffe9c3ff",
     },
     {
       nome: "Ponta Esquerda",
       corPrimaria: "#F57C00",
-      corSecundaria: "#FFE8D6",
+      corSecundaria: "#fdcaa2ff",
     },
     {
       nome: "Atacante",
       corPrimaria: "#E53935",
-      corSecundaria: "#FFE5E5",
+      corSecundaria: "#e7a3a3ff",
     },
     {
       nome: "Reserva",

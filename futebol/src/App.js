@@ -85,10 +85,16 @@ function App() {
       <h1>Futebol das Quartas</h1>
       <Banner />
       <Formulario
+        posicoes={posicoes.map((posicao) => posicao.nome)}
         aoJogadorCadastrado={(jogador) => aoNovoJogadorAdicionado(jogador)}
       />
       {posicoes.map((posicoes) => (
-        <Posicoes key={posicoes.nome} nome={posicoes.nome} corPrimaria={posicoes.corPrimaria} corSecundaria={posicoes.corSecundaria} />
+        <Posicoes
+          key={posicoes.nome}
+          nome={posicoes.nome}
+          corPrimaria={posicoes.corPrimaria}
+          corSecundaria={posicoes.corSecundaria}
+        />
       ))}
     </div>
   );

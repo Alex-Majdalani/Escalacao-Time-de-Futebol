@@ -5,22 +5,6 @@ import Lista from "../Lista";
 import "./Formulario.css";
 
 const Formulario = (props) => {
-  const posicoes = [
-    "Goleiro",
-    "Lateral Direito",
-    "Zagueiro",
-    "Lateral Esquerdo",
-    "Volante",
-    "Meia",
-    "Meia Ofensivo",
-    "Meia Defensivo",
-    "Ponta Direita",
-    "Ponta Esquerda",
-    "Atacante",
-    "Centroavante",
-    "Reserva",
-  ];
-
   /*Função para a pagina não recarregar quando submeter o formulario*/
   const aoSalvar = (evento) => {
     evento.preventDefault();
@@ -64,7 +48,7 @@ const Formulario = (props) => {
         <Lista
           obrigatorio={true}
           label="Position"
-          itens={posicoes}
+          itens={props.posicoes}
           valor={position}
           aoAlterado={(valor) => setPosition(valor)}
         />

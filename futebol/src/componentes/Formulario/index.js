@@ -14,6 +14,9 @@ const Formulario = (props) => {
       imagem,
       position,
     });
+    setImagem("");
+    setNome("");
+    setOrigem("");
   };
 
   const [origem, setOrigem] = useState("");

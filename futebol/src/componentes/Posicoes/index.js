@@ -9,11 +9,11 @@ const Posicoes = (props) => {
     <section className="posicao" style={corSecundaria}>
       <h3 style={corPrimaria}>{props.nome}</h3>
       <div className="jogadores">
-        {props.jogadores.map((jogadores) => (
+        {props.jogadores.map((jogador) => (
           <Jogadores
-            nome={jogadores.nome}
-            origem={jogadores.origem}
-            imagem={jogadores.imagem}
+            nome={jogador.nome}
+            origem={jogador.origem}
+            imagem={jogador.imagem}
           />
         ))}
       </div>

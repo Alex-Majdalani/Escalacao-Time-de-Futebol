@@ -9,14 +9,14 @@ const Formulario = (props) => {
   const aoSalvar = (evento) => {
     evento.preventDefault();
     props.aoJogadorCadastrado({
-      nomeTime,
+      origem,
       nome,
       imagem,
       position,
     });
   };
 
-  const [nomeTime, setNomeTime] = useState("");
+  const [origem, setOrigem] = useState("");
   const [nome, setNome] = useState("");
   const [imagem, setImagem] = useState("");
   const [position, setPosition] = useState("");
@@ -27,10 +27,10 @@ const Formulario = (props) => {
         <h2>Preencha os dados para criar o card do jogador</h2>
         <CampoTexto
           obrigatorio={true}
-          label="Nome do Time"
-          placeholder="Digite o nome do seu time"
-          valor={nomeTime}
-          aoAlterado={(valor) => setNomeTime(valor)}
+          label="Origem"
+          placeholder="Digite de onde você vem"
+          valor={origem}
+          aoAlterado={(valor) => setOrigem(valor)}
         />
         <CampoTexto
           obrigatorio={true}

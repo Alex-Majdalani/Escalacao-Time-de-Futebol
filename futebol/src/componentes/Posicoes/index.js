@@ -1,3 +1,4 @@
+import Jogadores from "../Jogadores";
 import "./Posicoes.css";
 
 const Posicoes = (props) => {
@@ -7,6 +8,9 @@ const Posicoes = (props) => {
   return (
     <section className="posicao" style={corSecundaria}>
       <h3 style={corPrimaria}>{props.nome}</h3>
+      {props.jogadores.map((jogadores) => (
+        <Jogadores nome={jogadores.nome} origem={jogadores.origem} />
+      ))}
     </section>
   );
 };

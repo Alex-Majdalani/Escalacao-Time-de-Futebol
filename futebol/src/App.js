@@ -74,6 +74,7 @@ function App() {
           nome={posicoes.nome}
           corPrimaria={posicoes.corPrimaria}
           corSecundaria={posicoes.corSecundaria}
+          jogadores={jogadores}
         />
       ))}
     </div>

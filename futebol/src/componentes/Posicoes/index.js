@@ -6,18 +6,20 @@ const Posicoes = (props) => {
   const corSecundaria = { backgroundColor: props.corSecundaria };
 
   return (
-    <section className="posicao" style={corSecundaria}>
-      <h3 style={corPrimaria}>{props.nome}</h3>
-      <div className="jogadores">
-        {props.jogadores.map((jogador) => (
-          <Jogadores
-            nome={jogador.nome}
-            origem={jogador.origem}
-            imagem={jogador.imagem}
-          />
-        ))}
-      </div>
-    </section>
+    props.jogadores.length > 0 && (
+      <section className="posicao" style={corSecundaria}>
+        <h3 style={corPrimaria}>{props.nome}</h3>
+        <div className="jogadores">
+          {props.jogadores.map((jogador) => (
+            <Jogadores
+              nome={jogador.nome}
+              origem={jogador.origem}
+              imagem={jogador.imagem}
+            />
+          ))}
+        </div>
+      </section>
+    )
   );
 };
 

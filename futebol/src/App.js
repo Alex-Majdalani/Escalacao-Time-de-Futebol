@@ -2,6 +2,7 @@ import { useState } from "react";
 import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulario";
 import Posicoes from "./componentes/Posicoes";
+import Rodape from "./componentes/Rodape";
 
 function App() {
   const posicoes = [
@@ -79,6 +80,7 @@ function App() {
           )}
         />
       ))}
+      <Rodape />
     </div>
   );
 }

@@ -1,0 +1,18 @@
+.footer {
+  background-color: #3a673a;
+  padding: 20px 0;
+}
+
+.footer > p {
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.footer .redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}

@@ -15,6 +15,7 @@ const Posicoes = (props) => {
               nome={jogador.nome}
               origem={jogador.origem}
               imagem={jogador.imagem}
+              key={jogador.nome}
             />
           ))}
         </div>

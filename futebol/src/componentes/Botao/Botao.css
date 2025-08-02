@@ -2,14 +2,25 @@
   background-color: rgb(60, 107, 60);
   border-radius: 10px;
   font-weight: 700;
-  font-size: 5;
-  padding: 32px;
+  font-size: 1.2rem;
+  padding: 16px 32px;
   border: none;
   cursor: pointer;
   color: #fff;
-  margin: 32px 0px;
+  margin: 20px 0;
+  transition: background 0.3s;
 }
 
 .botao:hover {
+  background-color: #4cae70;
   color: #95ffd4;
+}
+
+/* ✅ Responsividade */
+@media (max-width: 480px) {
+  .botao {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
 }

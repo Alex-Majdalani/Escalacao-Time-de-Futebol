@@ -1,18 +1,26 @@
 .posicao {
   text-align: center;
-  padding: 32px;
+  padding: 20px;
 }
 
 .posicao h3 {
-  font-size: 32px;
+  font-size: 1.5rem;
   border-bottom: 4px solid;
   display: inline-block;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 }
 
 .posicao .jogadores {
   display: flex;
-  justify-content: space-around;
-  margin-top: 32px;
-  flex-wrap: wrap; /*se não couber todos os cards na mesma linha ele vai quebrar para linha de baixo*/
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* ✅ Responsividade */
+@media (max-width: 768px) {
+  .posicao h3 {
+    font-size: 1.2rem;
+  }
 }

@@ -1,11 +1,13 @@
 .jogador {
   width: 280px;
+  margin: 10px;
 }
 
 .jogador .cabecalho {
   background-color: #f0f0f0;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
 }
+
 .jogador img {
   width: 100px;
   border-radius: 50%;
@@ -14,24 +16,34 @@
 }
 
 .jogador .rodape {
-  background: #ffffff;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-  border-radius: 0px 0px 10px 10px;
-  padding-top: 90px;
-  padding-bottom: 40px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 10px 10px;
+  padding: 60px 10px 20px;
+  text-align: center;
 }
 
 .jogador .rodape h4 {
   color: #6278f7;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.1rem;
   font-weight: bold;
-  margin-bottom: 8px;
 }
 
 .jogador .rodape h5 {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1rem;
   color: #212121;
-  padding: 0 16px;
+}
+
+/* ✅ Responsividade */
+@media (max-width: 1024px) {
+  .jogador {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .jogador {
+    width: 100%;
+    max-width: 300px;
+  }
 }

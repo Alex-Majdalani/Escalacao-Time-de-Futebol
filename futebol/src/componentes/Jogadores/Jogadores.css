@@ -34,6 +34,27 @@
   color: #212121;
 }
 
+/* Wrapper para simular o mesmo espaço que a imagem ocupa */
+.icone-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ffffff22; /* leve transparência para parecer um avatar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  bottom: -50px; /* mesmo deslocamento que a imagem */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ícone dentro do wrapper */
+.icone-futebol {
+  font-size: 50px; /* proporcional ao tamanho da imagem */
+  color: #333;
+}
+
 /* ✅ Responsividade */
 @media (max-width: 1024px) {
   .jogador {
